@@ -74,30 +74,27 @@ public class GildedRose
             switch (item.Name)
             {
                 case "Backstage passes to a TAFKAL80ETC concert":
-                    item.SellIn--;
                     if (item.SellIn < 11) { item.Quality = item.Quality < 50 ? item.Quality + 1 : item.Quality; }
                     ;
                     if (item.SellIn < 6) { item.Quality = item.Quality < 50 ? item.Quality + 1 : item.Quality; }
                     ;
-
+                    item.SellIn--;
+                    if (item.SellIn < 0) item.Quality = 0;
                     break;
                 case "Aged Brie":
                     item.SellIn--;
+
                     if (item.SellIn < 0)
                     {
                         item.Quality = item.Quality < 50 ? item.Quality++ : item.Quality;
                     }
-
                     break;
                 case "Sulfuras, Hand of Ragnaros":
-                    //item.SellIn--;
-
-                    if (item.SellIn < 0) item.Quality = 0;
+                    //item.SellIn--;                    
                     break;
                 default:
                     item.SellIn--;
                     if (item.SellIn < 0) item.Quality = item.Quality > 0 ? item.Quality-- : item.Quality;
-
                     break;
             }
         }
