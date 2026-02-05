@@ -16,8 +16,8 @@ public class Program
         // this conjured item does not work properly yet
 
         var app = new GildedRose();
-        app.ExecuteDemo("");
-        app.DisplayUpdateConsole(days);
+        app.ImportDemoData("");
+        app.UpdateConsoleDisplay(days);
 
         Console.WriteLine("... !");
     }

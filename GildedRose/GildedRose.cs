@@ -47,7 +47,7 @@ public class GildedRose
         this.Items.Add(Item);
     }
 
-    public void ExecuteDemo(string fileJson)
+    public void ImportDemoData(string fileJson)
     {
         using (StreamReader r = new StreamReader("Resources//demo.json"))
         {
@@ -175,7 +175,7 @@ public class GildedRose
         //}
     }
 
-    internal void DisplayUpdateConsole(int days)
+    internal void UpdateConsoleDisplay(int days)
     {
         if (Items == null || Items.Count == 0)
         {
