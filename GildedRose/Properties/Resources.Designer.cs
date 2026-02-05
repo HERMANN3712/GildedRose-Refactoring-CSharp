@@ -59,21 +59,5 @@ namespace GildedRoseKata.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à [           {&quot;Name&quot; : &quot;+5 Dexterity Vest&quot;, &quot;SellIn&quot; : 10, &quot;&quot;Quality&quot;&quot; : 20},
-        ///            {&quot;Name&quot; : &quot;Aged Brie&quot;, &quot;SellIn&quot; : 2, &quot;&quot;Quality&quot;&quot; : 0},
-        ///            {&quot;Name&quot; : &quot;Elixir of the Mongoose&quot;, &quot;SellIn&quot; : 5, &quot;&quot;Quality&quot;&quot; : 7},
-        ///            {&quot;Name&quot; : &quot;Sulfuras, Hand of Ragnaros&quot;, &quot;SellIn&quot; : 0, &quot;&quot;Quality&quot;&quot; : 80},
-        ///            {&quot;Name&quot; : &quot;Sulfuras, Hand of Ragnaros&quot;, &quot;SellIn&quot; : -1, &quot;&quot;Quality&quot;&quot; : 80},
-        ///            {
-        ///                &quot;Name&quot; : &quot;Backstage passes to a TAFKAL80ETC concert&quot;,
-        ///                &quot;&quot;SellIn&quot;&quot; [le reste de la chaîne a été tronqué]&quot;;.
-        /// </summary>
-        internal static string demo {
-            get {
-                return ResourceManager.GetString("demo", resourceCulture);
-            }
-        }
     }
 }
